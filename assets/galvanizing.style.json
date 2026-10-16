@@ -1,0 +1,10 @@
+{
+  "style": {"camera": [23, -60, 180], "font": "Arial", "font_pt": 8, "width_mm": 180, "height_mm": 108, "path_cmap": "viridis", "path_limits_s": [0, 200], "overview_columns": 4},
+  "strip_display": {"color": "#A8ADB3", "alpha": 0.35, "internal_edges": false, "outer_perimeter_only": true, "connector_disclosure": "Illustrative wrap joins actual strip endpoints; display geometry only, excluded from CFD masks and sampling."},
+  "baseline_references_kg_m3": {"Fe": 0.231, "Al": 19.8},
+  "sources": [
+    {"label": "Fe source band", "points": [[-0.4, -0.95, -0.65], [-0.4, -1.28, -0.65]], "color": "#C65D00", "linestyle": "-"},
+    {"label": "Al feed zone", "bounds": [[-1.8, -1.2], [-0.45, 0.45], [1.6, 2.3]], "color": "#242424", "linestyle": "--"}
+  ],
+  "export": {"dpi": 600, "formats": ["png", "tif", "svg", "pdf"], "overview": true, "multipage_pdf": true}
+}

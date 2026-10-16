@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.venv/
+.DS_Store
+Thumbs.db
+figures/
+*.npz
+*.cas
+*.cas.h5
+*.dat
+*.dat.h5

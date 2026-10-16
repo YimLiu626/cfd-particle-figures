@@ -1,0 +1,28 @@
+{
+  "data": "scene_data.npz",
+  "output": "figures",
+  "bounds": [[-2, 2], [-2, 2], [0, 4]],
+  "provenance": "Replace with actual solver run, scalar definitions, extraction method, cohort selection and source-region evidence before use.",
+  "provenance_files": [],
+  "max_path_gap_s": 5,
+  "gap_fill_m": 0,
+  "stages": [
+    {"label": "Initial sites", "field_time_s": 10, "birth_window_s": [0, 10]},
+    {"label": "t = 15 s", "field_time_s": 15, "particle_time_s": 15},
+    {"label": "t = 30 s", "field_time_s": 30, "particle_time_s": 30},
+    {"label": "t = 50 s", "field_time_s": 50, "particle_time_s": 50},
+    {"label": "t = 80 s", "field_time_s": 80, "particle_time_s": 80},
+    {"label": "t = 120 s", "field_time_s": 120, "particle_time_s": 120},
+    {"label": "t = 160 s", "field_time_s": 160, "particle_time_s": 160},
+    {"label": "t = 200 s", "field_time_s": 200, "particle_time_s": 200}
+  ],
+  "fields": [
+    {"id": "solute", "key": "solute_mass_concentration", "label": "Dissolved solute: concentration change", "units": "kg m$^{-3}$", "quantity_basis": "Saved liquid density times verified solute mass fraction; reference is an aligned initial field.", "mode": "change", "reference_key": "initial_solute_mass_concentration", "cmap": "RdBu_r", "opacity": 0.16},
+    {"id": "product", "key": "product_mass_concentration", "label": "Precipitated product", "units": "kg m$^{-3}$", "quantity_basis": "Actual Eulerian product mass concentration; not parcel number density.", "mode": "absolute", "positive_surfaces_only": true, "cmap": "YlOrBr", "opacity": [0.12, 0.16, 0.20, 0.24]}
+  ],
+  "meshes": [],
+  "sources": [],
+  "wall_maps": [],
+  "style": {"camera": [23, -60, 0], "font": "Arial", "font_pt": 8, "width_mm": 180, "height_mm": 105, "path_cmap": "viridis", "path_limits_s": [0, 200], "overview_columns": 4},
+  "export": {"dpi": 600, "formats": ["png", "tif", "svg", "pdf"], "overview": true, "multipage_pdf": true}
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "CFD Particle Figures"
+  short_description: "Publication figures for CFD fields and particle transport"
+  default_prompt: "Use $cfd-particle-figures to create publication figures of particle birth, transport, and semitransparent concentration fields from my CFD results."
